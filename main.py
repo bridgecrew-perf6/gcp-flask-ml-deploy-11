@@ -8,7 +8,7 @@ def hello():
     print("I am inside hello world")
     return "Hello World! CD"
 
-@app.route('echo/<name>')
+@app.route('/echo/<name>')
 def echo(name):
     print(f"This was placed in the url: new-{name}")
     val = {"new-name": name}
